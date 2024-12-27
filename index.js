@@ -53,7 +53,6 @@ app.get("/getTask", async (req, res) => {
   }
 });
 
-/*
 // get populated task details
 app.get("/getTask/populated", async (req, res) => {
   try {
@@ -70,7 +69,6 @@ app.get("/getTask/populated", async (req, res) => {
     return res.status(500).json({ message: "Internal server error" });
   }
 });
-*/
 
 app.get("/getTask/populated/filtered", async (req, res) => {
   const { owners, team, project, tags } = req.query;
